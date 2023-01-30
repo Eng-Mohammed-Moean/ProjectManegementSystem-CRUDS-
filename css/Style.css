@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #222;
+    color: #FFF;
+    font-family: system-ui;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-size: 22px;
+    position: relative;
+}
+
+
+
+.mood  {
+    position: absolute;
+    color: #FFF;
+    font-size: 20px;
+    right: 0;
+    top: 0;
+    /* background-color: rgb(188, 35, 35); */
+}
+
+.mood i {
+    padding-right: 10px ;
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    background: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: #FFF;
+    transition: 0.5s;
+}
+
+input:focus {
+    background: #000;
+    scale: 1.1;
+}
+
+.price input {
+    width: 20%;
+}
+
+#total {
+    background: rgb(217, 52, 74);
+    padding: 12px;
+    border-radius: 4px;
+
+}
+
+#total::before {
+    content: "Total : ";
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    transition: 0.4s;
+    background: rgb(135, 135, 135);
+    color: #FFF;
+    transform: scale(1.1);
+    letter-spacing: 1px;
+}
+
+.btn_search {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn_search button {
+    width: 48%;
+}
+
+#deleteAll {
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+
+}
+
+tbody button:hover {
+    transition: 0.4s;
+    background: rgb(135, 135, 135);
+    color: #FFF;
+}
+
+table th {
+    text-transform: uppercase;
+}
+
+
+th,
+td {
+    padding: 5px;
+}
+
+@media (max-width:850px) {
+    tbody button {
+        font-size: 15px;
+    }
+}
